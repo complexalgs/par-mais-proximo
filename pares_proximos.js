@@ -1,3 +1,7 @@
+/* Trabalho escrito e adaptado por: Halisson S.J., Lucas Frade, Lucas Rodrigues, Marcos Oliveira 
+e apresentado à disciplina Complexidade de Algoritmos da professoa Elvira Lovatte.
+*/
+
 var pontos;
 var maisProximos;
 
@@ -15,7 +19,7 @@ function setup() {
   for (var i = 0; i < criarNumPontos; i++) {
     pontos[i] = createVector(random(1, width-100), random(1, height-100)); 
     // O createVector() é uma função da lib p5 que cria pontos no plano ou no espaço, no nosso caso estamos usando apenas p1 e p2 (x, y) (duas dimensões)
-
+  }
   // pontos = new Array(6);
   //   pontos[0] = createVector(100, 200);
   //   pontos[1] = createVector(300, 1000);
@@ -24,8 +28,6 @@ function setup() {
   //   pontos[4] = createVector(400, 110);
   //   pontos[5] = createVector(200, 500);
 
-
-  }
   
   Px = ordPeloX(pontos); // todos os pontos ordenados pelo X
   Py = ordPeloY(pontos); // todos os pontos ordenados pelo Y
